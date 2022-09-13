@@ -42,3 +42,9 @@
   text-align: center;
   padding: auto;
 }
+.button{
+  min-width: 120px;
+  height: auto;
+  padding: 1rem;
+  background-color: aliceblue;
+}
