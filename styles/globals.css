@@ -9,14 +9,23 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.search>input, .search>.currency{
+  width: 30rem;
+  height:4em;
+  border-radius: 40px;
+}
+.search>.currency{
+  width:20rem
 }
 .user{
 
 }
 .user>div{
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  border-radius: 50px;
+  width: 4rem;
+  height: 4rem;
   background-color: beige;
   display: flex;
   flex-direction: column;
