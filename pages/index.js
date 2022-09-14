@@ -10,6 +10,7 @@ export default function Home() {
       <Search/>
       <hr />
       <Items/>
+      <hr />
     </div>
   )
 }

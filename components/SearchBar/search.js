@@ -1,5 +1,5 @@
 import IconBtn from "./iconBtn"
-
+import { BiGridSmall } from "react-icons/bi";
 function Search() {
   return (
     <div className="search all">
@@ -12,7 +12,6 @@ function Search() {
           <IconBtn/>
           <IconBtn/>
           <div className="div"></div>
-          <IconBtn/>
           <IconBtn/>  
             
         </div>

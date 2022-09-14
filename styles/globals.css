@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 *{
   margin: 5px;
 }
@@ -24,7 +25,11 @@
   width:20rem
 }
 .user{
+  margin: auto;
 
+}
+.user>div{
+  font-size:xx-large
 }
 .user>.div{
   height: 4rem;
