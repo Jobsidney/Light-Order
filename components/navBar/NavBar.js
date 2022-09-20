@@ -3,7 +3,7 @@ import IconBtn from "../SearchBar/iconBtn"
 function NavBar() {
   return (
     <div className="navbar ">
-        <div className="log">
+        <div className="logo">
             <IconBtn/>
         </div>
         <div className="navLinks">
