@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import FloatCard from '../components/Cards/FloatCard'
 import Items from '../components/ItemsBar/Items'
 import IntroInfo from '../components/navBar/IntroInfo'
 import NavBar from '../components/navBar/NavBar'
@@ -19,8 +20,10 @@ export default function Home() {
           <div className='floating-card'>
             <h1>Why Light Order?</h1>
             <p>Light Order operates its retail work on a stand-alone basis</p>
-            <div>
-              
+            <div className='inline-flex'>
+              <FloatCard/>
+              <FloatCard/>
+              <FloatCard/>
             </div>
 
           </div>
