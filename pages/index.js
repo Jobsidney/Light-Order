@@ -9,7 +9,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div >
+    <div className='body'>
       {/* <div className='opacity'>
       </div> */}
       <div className="wholeINtro">
@@ -27,6 +27,10 @@ export default function Home() {
             </div>
 
           </div>
+        </div>
+        <div className="products">
+          <h2>Our Best Product</h2>
+          <p>open-sell environment features an ever-increasing amount</p>
         </div>
     </div>
   )
