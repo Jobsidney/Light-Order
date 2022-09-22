@@ -36,11 +36,18 @@ export default function Home() {
         </div>
         <div className="products">
           <Title title={"Our Best Product"} des={"open-sell environment features an ever-increasing amount"}/>
-          <div className="itemsCard flex">
+          <div className="itemsCard flex justify-center">
             <AdvertCard/>
             <AdvertCard/>
             <AdvertCard/>
           </div>
+        </div>
+        <div className="blogs text-center">
+          <Title title="Why Light Order?" des="Light Order operates its retail work on a stand-alone basis"/>
+          <div className="">
+            <div className='fcard'></div>
+          </div>
+
         </div>
     </div>
   )

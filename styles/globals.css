@@ -199,13 +199,13 @@
 .floating-card,.products{
   text-align: center;
 }
-.floating-card>div>h1,.products>div>h1{
+.floating-card>div>h1,.products>div>h1,.blogs>div>h1{
   padding-top: 3rem;
   font-size: xx-large;
   font-weight: bold;
   opacity: 0.7;
 }
-.floating-card>div>p,.products>div>p{
+.floating-card>div>p,.products>div>p,.blogs>div>p{
   font-size: larger;
   padding: 1rem 0rem 2rem 0rem;
 
@@ -283,4 +283,12 @@
   font-weight: 700;
   font-family: 'Cormorant Upright', sans-serif;
 }
-.Card>p{}
+.blogs{
+  min-height: 500px;
+  margin-top: 6rem;
+  background-image: linear-gradient( #F1F3F4,rgb(142,210,201) );
+}
+.blogs>div>.fcard{
+  background-color: white;
+  min-height: 320px;
+}
