@@ -265,3 +265,22 @@
   border-radius: 30%;
   box-shadow: 0px 3px 10px black;
 }
+.Card{
+  border-radius: 0px;
+  border: 2px dotted black;
+  background-color: transparent;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+
+  
+}
+.Card>p,.Card>h4:last-of-type{
+  margin-top: 0;
+  color: rgba(14, 14, 14,0.7);
+}
+.Card>h4:first-of-type{
+  font-weight: 700;
+  font-family: 'Cormorant Upright', sans-serif;
+}
+.Card>p{}

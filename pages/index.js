@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import AdvertCard from '../components/Cards/AdvertCard'
 import FloatCard from '../components/Cards/FloatCard'
 import Items from '../components/ItemsBar/Items'
 import IntroInfo from '../components/navBar/IntroInfo'
@@ -35,8 +36,10 @@ export default function Home() {
         </div>
         <div className="products">
           <Title title={"Our Best Product"} des={"open-sell environment features an ever-increasing amount"}/>
-          <div className="itemsCard">
-            <div></div>
+          <div className="itemsCard flex">
+            <AdvertCard/>
+            <AdvertCard/>
+            <AdvertCard/>
           </div>
         </div>
     </div>
