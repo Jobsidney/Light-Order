@@ -307,5 +307,47 @@
   border-radius: 8px;
 }
 span{
-  background-color: #FFD799;
+  background-color: #FFD799;  
+}
+.blogs::before{
+  height: 1.5rem;
+  width: 1.5rem;
+  content: '';
+  display: block;
+  position: relative;
+  float: right;
+  right: 22vw;
+  background-color:#ed5625;
+  transform: rotateY(0deg) rotate(20deg);
+}
+.reviews{
+  padding-top: 5rem;
+  text-align: start;
+  font-size: x-large;
+  padding-left: 16vw;
+  margin: auto;
+  color: rgba(14, 14, 14,0.7);
+}
+.reviews h2{
+  font-weight: bolder;
+  color: black;
+  font-size: xx-large;
+}
+.reviews>div>.review{
+  width: 300px;
+  min-height: 200px;
+  height: fit-content;
+  background-color: white;
+  padding: 1rem;
+  align-items: flex-start;
+}
+.reviews>div>.review>div>div>h2{
+  font-size: large;
+}
+.reviews>div>.review>p{
+  color: rgba(19, 18, 18,0.7);
+  font-size:large;
+}
+.reviewCardsAll{
+  margin-bottom: -3rem;
 }

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import AdvertCard from '../components/Cards/AdvertCard'
 import BlogCards from '../components/Cards/BlogCards'
 import FloatCard from '../components/Cards/FloatCard'
+import ReviewsCard from '../components/Cards/ReviewsCard'
 import Items from '../components/ItemsBar/Items'
 import IntroInfo from '../components/navBar/IntroInfo'
 import NavBar from '../components/navBar/NavBar'
@@ -52,10 +53,20 @@ export default function Home() {
             <BlogCards/>
           </div>
           <div className="reviews">
-            <p><span>10,000+</span> trusted reviews</p>
-            <h2>by customers</h2>
+            <div>
+              <p><span>10,000+</span> trusted reviews</p>
+              <h2>by customers</h2>
+            </div>
+            <div className="reviewCardsAll flex flex-row">
+              <ReviewsCard/>
+              <ReviewsCard/>
+              <ReviewsCard/>
+              <ReviewsCard/>
+            </div>
           </div>
-
+        </div>
+        <div className="subscription">
+          
         </div>
     </div>
   )
