@@ -275,11 +275,11 @@
 
   
 }
-.Card>p,.Card>h4:last-of-type{
+.Card>p,.Card>h4:last-of-type,.blogs>div>.fcard>p{
   margin-top: 0;
   color: rgba(14, 14, 14,0.7);
 }
-.Card>h4:first-of-type{
+.Card>h4:first-of-type,.blogs>div>.fcard>h4:first-of-type{
   font-weight: 700;
   font-family: 'Cormorant Upright', sans-serif;
 }
@@ -291,4 +291,21 @@
 .blogs>div>.fcard{
   background-color: white;
   min-height: 320px;
+  height: fit-content;
+  text-align: start;
+  align-items: flex-start;
+}
+.blogs>div>.fcard>img{
+  margin-top: -1rem;
+  border-radius: inherit;
+  border: 2px solid rgba(112, 112, 112,0.2);
+}
+.blogs>div>.fcard>button{
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 8px;
+}
+span{
+  background-color: #FFD799;
 }
