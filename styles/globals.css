@@ -186,8 +186,8 @@
   background-image: linear-gradient( rgb(142,210,201) ,#F1F3F4);
 }
 .floating-card{
-  width: fit-content;
-  min-width: 60vw;
+  /* width: fit-content; */
+  width: 60vw;
   float: left;
   clear: both;
   height:fit-content;
@@ -235,8 +235,9 @@
 
 }
 .fcard{
-  height: 320px;
-  width: 280px;
+  min-height: 320px;
+  min-width: 280px;
+  max-width: 280px;
   border-radius: 25px;
   background-color: rgb(112,130,88);
   display: flex;
@@ -244,6 +245,8 @@
   align-items: center;
   text-align: center;
   padding: 2rem 1rem;
+  margin-right: 1rem;
+  /* margin: auto; */
 }
 .fcard> h2{
   color: white;
@@ -259,8 +262,8 @@
   justify-content: space-around;
 }
 .icon{
-  width: 5rem;
-  height: 5rem;
+  min-width: 5rem;
+  min-height: 5rem;
   background-color: rgb(225, 221, 221);
   border-radius: 30%;
   box-shadow: 0px 3px 10px black;
@@ -272,8 +275,6 @@
   border-top: none;
   border-bottom: none;
   border-left: none;
-
-  
 }
 .Card>p,.Card>h4:last-of-type,.blogs>div>.fcard>p{
   margin-top: 0;
@@ -333,7 +334,7 @@ span{
   color: black;
   font-size: xx-large;
 }
-.reviews>div>.review{
+.review{
   width: 300px;
   min-height: 200px;
   height: fit-content;
@@ -341,16 +342,14 @@ span{
   padding: 1rem;
   align-items: flex-start;
 }
-.reviews>div>.review>div>div>h2{
+.review>div>div>h2{
   font-size: large;
 }
-.reviews>div>.review>p{
+.review>p{
   color: rgba(19, 18, 18,0.7);
   font-size:large;
 }
-.reviewCardsAll{
-  
-}
+
 .subscription{
   background-color: #C96768;
   margin: 10rem 10%;
@@ -451,8 +450,33 @@ svg:hover, i:hover{
 }
 
 @media screen and (max-width: 768px) {
-  .body{
-    background-color: red;
+  .Card{
+    border-radius: 0px;
+    border: 2px solid #C96768;
+    background-color: transparent;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  .floating-card{
+    width: 100vw;
+    float: left;
+    clear: both;
+    height:fit-content;
+    background-color:white;
+    margin-top: -100px;
+    border-radius:  18px;
+    padding: 1rem 1rem 3rem 1rem;
+  }
+  .blogs{
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+  .reviewCardsAll{
+  padding-left:0 ;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
   }
 }
 

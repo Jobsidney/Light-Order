@@ -10,6 +10,7 @@ import IntroInfo from '../components/navBar/IntroInfo'
 import NavBar from '../components/navBar/NavBar'
 import Search from '../components/SearchBar/search'
 import styles from '../styles/Home.module.css'
+import {MdChevronLeft, MdChevronRight} from 'react-icons/md'
 
 export default function Home() {
   function Title({title,span,span2,des}){
@@ -22,14 +23,14 @@ export default function Home() {
   }
   return (
     <div className='body'>
-      <div className="wholeINtro">
+      {/* <div className="wholeINtro">
           <NavBar/>
           <IntroInfo/>
-        </div>
+        </div> */}
         <div className="descr">
-          <div className='floating-card'>
+          <div className='floating-card xsm:w-ful' >
             <Title title="Why " span={'Light Order?'} des="Light Order operates its retail work on a stand-alone basis"/>
-            <div className='inline-flex'>
+            <div className='flex xsm:w-full dp:justify-center xsm:overflow-x-scroll xsm:scroll xsm:white-space-nowrap xsm:scroll-smooth '>
               <FloatCard/>
               <FloatCard/>
               <FloatCard/>
@@ -39,7 +40,7 @@ export default function Home() {
         </div>
         <div className="products">
           <Title title={"Our Best "} span="Product" des={"open-sell environment features an ever-increasing amount"}/>
-          <div className="itemsCard flex justify-center">
+          <div className="itemsCard md:justify-center  xsm:overflow-x-scroll xsm:scroll xsm:white-space-nowrap xsm:scroll-smooth xsm:flex xsm:flex-row">
             <AdvertCard/>
             <AdvertCard/>
             <AdvertCard/>
@@ -48,7 +49,7 @@ export default function Home() {
         </div>
         <div className="blogs text-center">
           <Title title="Our Blog" span2={'Read '} des="Light Order operates its retail work on a stand-alone basis"/>
-          <div className="flex justify-center xsm:flex-wrap">
+          <div className="flex md:justify-center  xsm:overflow-x-scroll xsm:scroll xsm:white-space-nowrap xsm:scroll-smooth ">
             <BlogCards/>
             <BlogCards/>
             <BlogCards/>
@@ -58,15 +59,19 @@ export default function Home() {
               <p><span>10,000+</span> trusted reviews</p>
               <h2>by customers</h2>
             </div>
-            <div className="reviewCardsAll flex xsm:flex-wrap">
-              <ReviewsCard/>
-              <ReviewsCard/>
-              <ReviewsCard/>
-              <ReviewsCard/>
+            <div className="arrows flex flex-row items-center">
+              <MdChevronLeft size={40}/>
+              <div className="reviewCardsAll  flex flex-row  xsm:overflow-x-scroll xsm:scroll xsm:white-space-nowrap xsm:scroll-smooth xsm:flex xsm:flex-row">
+                <ReviewsCard/>
+                <ReviewsCard/>
+                <ReviewsCard/>
+                <ReviewsCard/>
+              </div>
+              <MdChevronRight size={40}/>
             </div>
           </div>
         </div>
-        <div className="subscription">
+        {/* <div className="subscription">
           <p>Subscribe Our Newsletter!</p>
           <form action="">
             <div>
@@ -74,8 +79,8 @@ export default function Home() {
             <button type='submit'>Subscribe</button>
             </div>
           </form>
-        </div>
-        <Footer/>
+        </div> */}
+        {/* <Footer/> */}
     </div>
   )
 }

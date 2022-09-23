@@ -1,7 +1,7 @@
 import { BsGrid3X3GapFill, BsList } from 'react-icons/bs';
 function FloatCard() {
   return (
-    <div className="fcard">
+    <div className="fcard ">
         <div className="icon">
 
         </div>
