@@ -450,4 +450,10 @@ svg:hover, i:hover{
   color: #ed5625;
 }
 
+@media screen and (max-width: 768px) {
+  .body{
+    background-color: red;
+  }
+}
+
 

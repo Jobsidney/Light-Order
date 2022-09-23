@@ -48,7 +48,7 @@ export default function Home() {
         </div>
         <div className="blogs text-center">
           <Title title="Our Blog" span2={'Read '} des="Light Order operates its retail work on a stand-alone basis"/>
-          <div className="flex justify-center">
+          <div className="flex justify-center xsm:flex-wrap">
             <BlogCards/>
             <BlogCards/>
             <BlogCards/>
@@ -58,7 +58,7 @@ export default function Home() {
               <p><span>10,000+</span> trusted reviews</p>
               <h2>by customers</h2>
             </div>
-            <div className="reviewCardsAll flex flex-row">
+            <div className="reviewCardsAll flex xsm:flex-wrap">
               <ReviewsCard/>
               <ReviewsCard/>
               <ReviewsCard/>
