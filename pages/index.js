@@ -4,6 +4,7 @@ import AdvertCard from '../components/Cards/AdvertCard'
 import BlogCards from '../components/Cards/BlogCards'
 import FloatCard from '../components/Cards/FloatCard'
 import ReviewsCard from '../components/Cards/ReviewsCard'
+import Footer from '../components/footer/Footer'
 import Items from '../components/ItemsBar/Items'
 import IntroInfo from '../components/navBar/IntroInfo'
 import NavBar from '../components/navBar/NavBar'
@@ -74,6 +75,7 @@ export default function Home() {
             </div>
           </form>
         </div>
+        <Footer/>
     </div>
   )
 }

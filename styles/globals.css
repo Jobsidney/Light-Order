@@ -349,6 +349,7 @@ span{
   font-size:large;
 }
 .reviewCardsAll{
+  
 }
 .subscription{
   background-color: #C96768;
@@ -384,3 +385,69 @@ span{
   padding: 0px 3rem;
   border-radius: 10px;
 }
+footer{
+  margin: auto;
+  background-color: #ebebeb;
+  color: black;
+  font-size: 1.3rem;
+  margin-top: 50px;
+  height: 40vh;
+}
+.footer{
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 5rem;
+  
+}
+.fa-twitter{
+font-size: 36px;
+}
+.left{
+  /* background-color: aqua; */
+  width: 30%;  
+}
+.left p{
+  margin-top: 2rem;
+}
+.footer>ul{
+  /* background-color: red; */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer>ul>.title{
+  font-weight: 900;
+}
+.footer>ul>li:hover{
+  color: #ed5625;
+}
+
+.dow{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.socials{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.socials>p{
+  font-weight: 900;
+}
+.media{
+  display: flex;
+  justify-content: space-around;
+}
+svg,i{
+  transition: 0.5s ease;
+}
+svg:hover, i:hover{
+  color: #ed5625;
+}
+
+
