@@ -21,6 +21,15 @@ export default function Home() {
       </div>
     )
   }
+
+  const sliderLeft=()=>{
+    let slider=document.getElementById('slider')
+    slider.scrollLeft=slider.scrollLeft-400
+  }
+  const sliderRight=()=>{
+    let slider=document.getElementById('slider')
+    slider.scrollLeft=slider.scrollLeft+400
+  }
   return (
     <div className='body'>
       {/* <div className="wholeINtro">
@@ -53,21 +62,26 @@ export default function Home() {
             <BlogCards/>
             <BlogCards/>
             <BlogCards/>
+              
           </div>
           <div className="reviews">
-            <div>
+            <div className='pp'>
               <p><span>10,000+</span> trusted reviews</p>
               <h2>by customers</h2>
             </div>
             <div className="arrows flex flex-row items-center">
-              <MdChevronLeft size={40}/>
-              <div className="reviewCardsAll  flex flex-row  xsm:overflow-x-scroll xsm:scroll xsm:white-space-nowrap xsm:scroll-smooth xsm:flex xsm:flex-row">
+              <MdChevronLeft className='opac cursor-pointer' onClick={sliderLeft} size={70}/>
+              <div id="slider" className="reviewCardsAll scrollbar-hide  flex flex-row  xsm:overflow-x-scroll xsm:scroll xsm:white-space-nowrap xsm:scroll-smooth xsm:flex xsm:flex-row">
+                <ReviewsCard/>
+                <ReviewsCard/>
+                <ReviewsCard/>
+                <ReviewsCard/>
                 <ReviewsCard/>
                 <ReviewsCard/>
                 <ReviewsCard/>
                 <ReviewsCard/>
               </div>
-              <MdChevronRight size={40}/>
+              <MdChevronRight className='opac cursor-pointer' onClick={sliderRight} size={70}/>
             </div>
           </div>
         </div>

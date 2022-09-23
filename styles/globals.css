@@ -326,8 +326,10 @@ span{
   padding-top: 5rem;
   text-align: start;
   font-size: x-large;
-  padding-left: 16vw;
   color: rgba(14, 14, 14,0.7);
+}
+.pp{
+  padding-left: 16vw;
 }
 .reviews h2{
   font-weight: bolder;
@@ -348,6 +350,9 @@ span{
 .review>p{
   color: rgba(19, 18, 18,0.7);
   font-size:large;
+}
+.arrows{
+  padding: 0 16vw;
 }
 
 .subscription{
@@ -448,6 +453,9 @@ svg,i{
 svg:hover, i:hover{
   color: #ed5625;
 }
+.opac{
+
+}
 
 @media screen and (max-width: 768px) {
   .Card{
@@ -477,6 +485,16 @@ svg:hover, i:hover{
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
+  }
+  .arrows{
+    margin: 0 ;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1200px){
+  .arrows{
+    margin: 0 ;
+    padding: 0;
   }
 }
 
