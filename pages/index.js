@@ -66,7 +66,13 @@ export default function Home() {
           </div>
         </div>
         <div className="subscription">
-          
+          <p>Subscribe Our Newsletter!</p>
+          <form action="">
+            <div>
+            <input type="text" placeholder="Enter your Email" />
+            <button type='submit'>Subscribe</button>
+            </div>
+          </form>
         </div>
     </div>
   )

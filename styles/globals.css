@@ -285,6 +285,7 @@
 }
 .blogs{
   min-height: 500px;
+  height: fit-content;
   margin-top: 6rem;
   background-image: linear-gradient( #F1F3F4,rgb(142,210,201) );
 }
@@ -325,7 +326,6 @@ span{
   text-align: start;
   font-size: x-large;
   padding-left: 16vw;
-  margin: auto;
   color: rgba(14, 14, 14,0.7);
 }
 .reviews h2{
@@ -349,5 +349,38 @@ span{
   font-size:large;
 }
 .reviewCardsAll{
-  margin-bottom: -3rem;
+}
+.subscription{
+  background-color: #C96768;
+  margin: 10rem 10%;
+  height: 6rem;
+  border-radius: 20px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.subscription>p{
+  color: white;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.subscription>form>div>input{
+  width: 30rem;
+  height: 3rem;
+  border-radius: 10px 0px 0px 10px;
+  padding: 1rem;
+  border: 1px solid white;
+}
+.subscription>form>div{
+  border-radius: 10px;
+  width: fit-content;
+  background-color: white;
+}
+.subscription>form>div>button{
+  height: 3rem;
+  background-color: black;
+  color: white;
+  padding: 0px 3rem;
+  border-radius: 10px;
 }
