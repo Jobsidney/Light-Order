@@ -39,7 +39,9 @@ export default function Home() {
         <div className="descr">
           <div className='floating-card xsm:w-ful' >
             <Title title="Why " span={'Light Order?'} des="Light Order operates its retail work on a stand-alone basis"/>
-            <div className='flex xsm:w-full dp:justify-center xsm:overflow-x-scroll xsm:scroll xsm:white-space-nowrap xsm:scroll-smooth '>
+            <div className='flex '>
+            {/* xsm:w-full dp:justify-center xsm:overflow-x-scroll xsm:scroll xsm:white-space-nowrap xsm:scroll-smooth */}
+              
               <FloatCard/>
               <FloatCard/>
               <FloatCard/>
@@ -49,7 +51,7 @@ export default function Home() {
         </div>
         <div className="products">
           <Title title={"Our Best "} span="Product" des={"open-sell environment features an ever-increasing amount"}/>
-          <div className="itemsCard md:justify-center  xsm:overflow-x-scroll xsm:scroll xsm:white-space-nowrap xsm:scroll-smooth xsm:flex xsm:flex-row">
+          <div className="scrollbar-hide itemsCard md:justify-center  xsm:overflow-x-scroll xsm:scroll xsm:white-space-nowrap xsm:scroll-smooth xsm:flex xsm:flex-row">
             <AdvertCard/>
             <AdvertCard/>
             <AdvertCard/>
@@ -58,7 +60,7 @@ export default function Home() {
         </div>
         <div className="blogs text-center">
           <Title title="Our Blog" span2={'Read '} des="Light Order operates its retail work on a stand-alone basis"/>
-          <div className="flex md:justify-center  xsm:overflow-x-scroll xsm:scroll xsm:white-space-nowrap xsm:scroll-smooth ">
+          <div className="scrollbar-hide flex md:justify-center  xsm:overflow-x-scroll xsm:scroll xsm:white-space-nowrap xsm:scroll-smooth ">
             <BlogCards/>
             <BlogCards/>
             <BlogCards/>
