@@ -12,6 +12,7 @@ import Search from '../components/SearchBar/search'
 import styles from '../styles/Home.module.css'
 import {MdChevronLeft, MdChevronRight} from 'react-icons/md'
 
+
 export default function Home() {
   function Title({title,span,span2,des}){
     return(
@@ -32,10 +33,11 @@ export default function Home() {
   }
   return (
     <div className='body'>
-      {/* <div className="wholeINtro">
+      
+      <div className="wholeINtro">
           <NavBar/>
           <IntroInfo/>
-        </div> */}
+        </div>
         <div className="descr">
           <div className='floating-card xsm:w-ful' >
             <Title title="Why " span={'Light Order?'} des="Light Order operates its retail work on a stand-alone basis"/>
@@ -46,7 +48,7 @@ export default function Home() {
               <FloatCard/>
               <FloatCard/>
             </div>
-
+            
           </div>
         </div>
         <div className="products">
@@ -82,12 +84,13 @@ export default function Home() {
                 <ReviewsCard/>
                 <ReviewsCard/>
                 <ReviewsCard/>
+               
               </div>
               <MdChevronRight className='opac cursor-pointer' onClick={sliderRight} size={70}/>
             </div>
           </div>
         </div>
-        {/* <div className="subscription">
+        <div className="subscription">
           <p>Subscribe Our Newsletter!</p>
           <form action="">
             <div>
@@ -95,8 +98,9 @@ export default function Home() {
             <button type='submit'>Subscribe</button>
             </div>
           </form>
-        </div> */}
-        {/* <Footer/> */}
+        </div>
+        
+        <Footer/>
     </div>
   )
 }
