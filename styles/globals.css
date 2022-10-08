@@ -324,12 +324,38 @@ dd */
       box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
   }
    */
+
+   /* START OF PRODUCT */
+
+
+   .heading-tertiary {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 900;
+    margin-bottom: 3.2rem;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
   .meal-content {
-      padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+      padding: 1.2rem 2.8rem 2.8rem 2.8rem;
   }
   
   .meal-tags {
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
       display: flex;
       gap: 0.4rem;
   }
@@ -360,7 +386,7 @@ dd */
       font-size: 1.5rem;
       color: #333;
       font-weight: 600;
-      margin-bottom: 3.2rem;
+      margin-bottom: 1rem;
   }
   
   .meal-attributes {
@@ -389,12 +415,27 @@ dd */
   
   .all-recipes {
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
+      color: #e67e22;
   }
+  .list-item {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+}
+
+.list-icon {
+    width: 2rem;
+    height: 3rem;
+    color: #e67e22;
+}
   .section-meals {
     padding: 9.6rem 0;
 }
-
+/* END OF PRODUCTS */
 
 .blogs>div>.fcard{
   background-color: white;
