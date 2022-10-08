@@ -7,7 +7,7 @@
   margin: 3px;
 }
 .body{
-  background-color: #F1F3F4;
+  background-color: white;
 }
 .search{
   display: flex;
@@ -75,8 +75,10 @@
   }
   .navLinks>ul>li{
     margin-right:3rem;
-    font-weight:500;
-    font-size: large;
+    font-weight:700;
+
+    color: white;
+    font-size: xlarge;
   }
   .navLinks>ul>li:hover{
     text-decoration: underline;
@@ -92,13 +94,14 @@
 }
 .wholeINtro{
   /* background-color:  #f9b710 ; */
-  background-color:  rgb(244, 243, 241) ;
-  background-blend-mode: darken;
+  background-color:rgb(248, 118, 34);
+  /* background-blend-mode: darken; */
   height: 85vh;
 }
 .hero{
   /* background-image: url("../public/images/bg.png"); */
-  color: rgb(11, 11, 11);
+  color:white;
+  font-weight: 800;
   height: 70vh;
   width: 100%;
 
@@ -164,7 +167,7 @@
   display: block;
   float: right;
   position: absolute;
-  background-color: rgb(142,210,201);
+  background-color: rgb(219, 218, 217,0.4);
 }
 .heroSec>.image::before{
   height: 7rem;
@@ -175,26 +178,23 @@
   border-radius: 40% 40% 30% 60%;
   content: '';
   display: block;
-  background-color: rgb(142,210,201);
+  background-color: rgb(219, 218, 217,0.4);
 }
 .descr{
-  width: 100%;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient( rgb(142,210,201) ,#F1F3F4);
 }
 .floating-card{
-  /* width: fit-content; */
   width: 60vw;
-  float: left;
-  clear: both;
-  height:fit-content;
-  background-color:white;
+  background-color:#F1F3F4;
   margin-top: -100px;
   border-radius:  18px;
   padding: 1rem 1rem 3rem 1rem;
+}
+.cardz{
+  flex-direction: row;
+  justify-content: center;
 }
 .floating-card,.products{
   text-align: center;
@@ -288,19 +288,23 @@
   min-height: 500px;
   height: fit-content;
   margin-top: 6rem;
-  background-image: linear-gradient( #F1F3F4,rgb(142,210,201) );
+  background-color:  #F1F3F4;
 }
 /* 
 dd */
  .section-meals {
       padding: 9.6rem 0;
+      display: flex;
   }
   
   .meal {
-      box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+      box-shadow: 0 2.4rem 4.8rem rgba(8, 8, 8, 0.075);
       border-radius: 11px;
       overflow: hidden;
       transition: all 0.4s;
+      border: 3px solid rgba(10, 10, 10,0.2);
+      width: 400px;
+      margin: 2rem;
   }
   
   .meal:hover {
@@ -340,7 +344,7 @@ dd */
   }
   
   .meal-title {
-      font-size: 2.4rem;
+      font-size: 1.5rem;
       color: #333;
       font-weight: 600;
       margin-bottom: 3.2rem;
@@ -350,19 +354,19 @@ dd */
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 1rem;
   }
   
   .meal-attribute {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       display: flex;
       align-items: center;
       gap: 1.6rem;
   }
   
   .meal-icon {
-      height: 2.4rem;
-      width: 2.4rem;
+      height: 2rem;
+      width: 2rem;
       color: #e67e22;
   }
   
@@ -378,84 +382,7 @@ dd */
     padding: 9.6rem 0;
 }
 
-.meal {
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-    border-radius: 11px;
-    overflow: hidden;
-    transition: all 0.4s;
-}
 
-.meal:hover {
-    transform: translateY(-1.2rem);
-    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
-}
-
-.meal-content {
-    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
-}
-
-.meal-tags {
-    margin-bottom: 1.2rem;
-    display: flex;
-    gap: 0.4rem;
-}
-
-.tag {
-    display: inline-block;
-    padding: 0.4rem 0.8rem;
-    text-transform: uppercase;
-    color: #333;
-    border-radius: 100px;
-    font-weight: bold;
-}
-
-.tag--vegetarian {
-    background-color: #51cf66;
-}
-
-.tag--vegan {
-    background-color: #94d82d;
-}
-
-.tag--paleo {
-    background-color: #ffd43b;
-}
-
-.meal-title {
-    font-size: 2.4rem;
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 3.2rem;
-}
-
-.meal-attributes {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.meal-attribute {
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-}
-
-.meal-icon {
-    height: 2.4rem;
-    width: 2.4rem;
-    color: #e67e22;
-}
-
-.meal-img {
-    width: 100%;
-}
-
-.all-recipes {
-    text-align: center;
-    font-size: 1.8rem;
-}
 .blogs>div>.fcard{
   background-color: white;
   min-height: 320px;
@@ -474,8 +401,10 @@ dd */
   margin-top: 0.3rem;
   border-radius: 8px;
 }
-span{
-  background-color: #FFD799;  
+h1>span{
+  color: white;
+  background-color:#ed5625;
+  background-blend-mode: darken;
 }
 .blogs::before{
   height: 1.5rem;
