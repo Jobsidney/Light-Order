@@ -4,7 +4,7 @@
 
 
 *{
-  margin: 3px;
+  margin: 0px;
 }
 .body{
   background-color: white;
@@ -57,10 +57,11 @@
   background-color: aliceblue;
 }
 .navbar{
-  width: 90%;
+  background-color:rgb(248, 118, 34);
+  width: 100%;
+  padding: 2rem 0rem;
   display: grid;
   grid-template-columns: 20% 50% 20%;
-  /* background-color:rgb(226, 239, 251); */
   margin: auto;
   align-content: space-between;
   gap: 1rem;
@@ -102,8 +103,9 @@
 .wholeINtro{
   /* background-color:  #f9b710 ; */
   background-color:rgb(248, 118, 34);
-  /* background-blend-mode: darken; */
-  height: 85vh;
+  /* background-blend-mode:luminosity; */
+  min-height: 85vh;
+  height: fit-content;
 }
 .hero{
   /* background-image: url("../public/images/bg.png"); */
@@ -111,6 +113,7 @@
   font-weight: 800;
   height: 70vh;
   width: 100%;
+ 
 
 }
 .heroSec{
@@ -179,7 +182,7 @@
 .heroSec>.image::before{
   height: 7rem;
   width: 7rem;
-  top: 0;
+  top: 7rem;
   left: 0;
   float: left;
   border-radius: 40% 40% 30% 60%;
@@ -193,15 +196,13 @@
   align-items: center;
 }
 .floating-card{
-  width: 60vw;
-  background-color:rgba(235, 235, 236,0.98);
-  margin-top: -100px;
+  width: 100%;
   border-radius:  18px;
   padding: 1rem 1rem 3rem 1rem;
 }
 .cardz{
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 .floating-card,.products{
   text-align: center;
@@ -341,9 +342,11 @@ dd */
 }
 
 .heading-secondary {
-  font-size: 4.4rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
+  font-weight: bolder;
+  color: rgb(69, 69, 69);
 }
 .list {
   list-style: none;
@@ -406,7 +409,7 @@ dd */
   .meal-icon {
       height: 2rem;
       width: 2rem;
-      color: #e67e22;
+      color:rgb(248, 118, 34);
   }
   
   .meal-img {
@@ -416,7 +419,7 @@ dd */
   .all-recipes {
       text-align: center;
       font-size: 1.5rem;
-      color: #e67e22;
+      color: rgb(248, 118, 34);
   }
   .list-item {
     font-family: "Rubik", sans-serif;
@@ -430,12 +433,81 @@ dd */
 .list-icon {
     width: 2rem;
     height: 3rem;
-    color: #e67e22;
+    color: rgb(248, 118, 34);
 }
   .section-meals {
     padding: 9.6rem 0;
 }
 /* END OF PRODUCTS */
+
+/* TESTIMONIES */
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color:#ed5625;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+.section-testimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.5rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+
+/* END OF TESTIMONIES */
 
 .blogs>div>.fcard{
   background-color: white;
@@ -505,7 +577,7 @@ h1>span{
 }
 
 .subscription{
-  background-color: #C96768;
+  background-color:rgb(248, 118, 34);
   margin: 10rem 10%;
   height: 6rem;
   border-radius: 20px;
@@ -539,8 +611,8 @@ h1>span{
   border-radius: 10px;
 }
 footer{
+  border-top: 4px solid rgba(16, 16, 16,0.3);
   margin: auto;
-  background-color: #ebebeb;
   color: black;
   font-size: 1.3rem;
   margin-top: 50px;

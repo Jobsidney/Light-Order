@@ -16,7 +16,7 @@ import Title from '../components/Title'
 import ProductSec from '../components/ProductSection/ProductSec'
 import WholeBlog from '../components/WholeBlog/WholeBlog'
 import Blogy from '../components/newBlog/Blogy'
-
+import Testimonials from '../components/WholeBlog/Testimonials'
 export default function Home() {
 
 
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <WholeFLoating/>
         <ProductSec/>
-        <WholeBlog/>
+       <Testimonials/>
         <div className="subscription">
           <p>Subscribe Our Newsletter!</p>
           <form action="">
