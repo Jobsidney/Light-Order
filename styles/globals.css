@@ -90,7 +90,14 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-
+}
+.User-Info>button{
+  padding: 0.7rem 3rem;
+  background-color:white;
+  margin:2px;
+  font-weight: 700;
+  font-size: large;
+  border-radius: 25px;
 }
 .wholeINtro{
   /* background-color:  #f9b710 ; */
@@ -187,7 +194,7 @@
 }
 .floating-card{
   width: 60vw;
-  background-color:#F1F3F4;
+  background-color:rgba(235, 235, 236,0.98);
   margin-top: -100px;
   border-radius:  18px;
   padding: 1rem 1rem 3rem 1rem;
@@ -209,6 +216,10 @@
   font-size: larger;
   padding: 1rem 0rem 2rem 0rem;
 
+}
+.products{
+  width: 80%;
+  margin: auto;
 }
 .products >div>h1::before{
   height: 1.5rem;
@@ -298,20 +309,21 @@ dd */
   }
   
   .meal {
-      box-shadow: 0 2.4rem 4.8rem rgba(8, 8, 8, 0.075);
+      box-shadow: 0 1rem 1rem rgba(8, 8, 8, 0.075);
       border-radius: 11px;
       overflow: hidden;
       transition: all 0.4s;
       border: 3px solid rgba(10, 10, 10,0.2);
       width: 400px;
+      min-width: 400px;
       margin: 2rem;
   }
   
-  .meal:hover {
+  /* .meal:hover {
       transform: translateY(-1.2rem);
       box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
   }
-  
+   */
   .meal-content {
       padding: 3.2rem 4.8rem 4.8rem 4.8rem;
   }
@@ -332,7 +344,8 @@ dd */
   }
   
   .tag--vegetarian {
-      background-color: #51cf66;
+      background-color:#ed5625;
+      color: white;
   }
   
   .tag--vegan {

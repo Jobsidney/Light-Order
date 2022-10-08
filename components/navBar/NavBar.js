@@ -1,5 +1,6 @@
 import IconBtn from "../SearchBar/iconBtn"
-
+import * as IonIcon from "react-icons/io5";
+import * as Gi from  "react-icons/gi";
 function NavBar() {
   return (
     <div className="navbar ">
@@ -16,7 +17,8 @@ function NavBar() {
             </ul>
         </div>
         <div className="User-Info">
-            <IconBtn/>
+            <button>Login</button>
+            
         </div>
       
     </div>
