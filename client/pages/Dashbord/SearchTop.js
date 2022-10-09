@@ -1,14 +1,15 @@
 import React from 'react'
 import Button from '../../components/ItemsBar/Button'
 import SmallNavBar from './SmallNavBar'
-
+import * as IoIcons from 'react-icons/io'
 function SearchTop() {
   return (
     <div className='flex flex row p-3 pt-6 justify-between bg'>
      <SmallNavBar/>
      <div className="searchBar">
-        <form action="">
-            <input type="text" />
+        <form className='flex' action="">
+            <input placeholder='' type="text" />
+            <IoIcons.IoIosSearch size={40}/>
         </form>
      </div>
 
