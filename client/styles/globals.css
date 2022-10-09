@@ -79,13 +79,12 @@
     font-weight:700;
 
     color: white;
-    font-size: xlarge;
+    font-size: x-large;
   }
   .navLinks>ul>li:hover{
     text-decoration: underline;
-    color: red;
-    /* transform: scale(1.3);
-    transition:0.5s; */
+    color: rgba(29, 29, 29,0.6);
+    cursor: pointer;
   }
 .User-Info{
   display: flex;
@@ -688,17 +687,17 @@ svg:hover, i:hover{
 }
 
 .navBar2>.menu-bars{
-  color:black;
+  color:rgb(248, 118, 34);
 
 }
 .menu-bars{
   margin-left: 2rem;
   font-size: 2rem;
   background-color: none;
-  color: black;
+  color:black;
 }
 .nav-menu{
-  background-color:#ed5625;
+  background-color:rgb(250, 85, 111);
  width: 420px;
  /* position: fixed; */
  display: flex;
@@ -707,11 +706,12 @@ svg:hover, i:hover{
  height: 100vh;
  position: fixed;
  left:-100%;
+ margin-top: -2rem;
  transition: 850ms;
 }
 .nav-menu.active{
   left:0;
-  background-color:#e8501d;
+  background-color:rgb(248, 118, 34);
   transition: 350ms;
 
 }
@@ -753,7 +753,7 @@ svg:hover, i:hover{
   border:1px solid grey;
   border-radius: 30px;
   font-size: 1.2rem;
-  color: #e8501d;
+  color: rgb(248, 118, 34);
   text-align: center;
 }
 input:focus{
@@ -770,7 +770,7 @@ input:focus{
   margin-right: 1.3rem;
 }
 .userInfo>.name>div{
-  color:#e8501d;
+  color:rgb(248, 118, 34);
   font-weight: bolder;
   text-align: center;
   font-size: 1.5rem;
@@ -782,8 +782,19 @@ input:focus{
   font-size: 1rem;
 }
 .bg{
-  background-color:rgb(242, 242, 242);
-  box-shadow: 2px 2px rgba(58, 58, 58,0.2);
+  background-color:white;
+  box-shadow: 2rem 2rem, rgb(58, 58, 58);
+}
+.dashCard{
+  background-color: white;
+  width: 300px;
+  height: 170px;
+  border-radius: 10px;
+  margin: 2rem;
+}
+.userItems{
+  background-color:rgb(242, 245, 252) ;
+  height: 100vh;
 }
 
 

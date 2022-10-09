@@ -12,13 +12,15 @@ function SearchTop() {
             <IoIcons.IoIosSearch size={40}/>
         </form>
      </div>
-
+     <div className='flex'>
+       {/* <IoIcons.IoIosCart  size={40}/> */}
      <div className="userInfo flex flex-row">
         <img src="https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519__340.jpg" alt="" />
         <div className="name flex flex-col align-center item-center">
             <div>Job sidney</div>
             <span>Customer</span>
         </div>
+     </div>
      </div>
     </div>
   )
