@@ -1,9 +1,10 @@
+import SearchTop from "./SearchTop"
 import SmallNavBar from "./SmallNavBar"
 
 function index() {
   return (
     <div>
-      <SmallNavBar/>
+      <SearchTop/>
     </div>
   )
 }
