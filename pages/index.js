@@ -31,7 +31,7 @@ export default function Home() {
         <WholeFLoating/>
         <ProductSec/>
        <Testimonials/>
-        <div className="subscription">
+        {/* <div className="subscription">
           <p>Subscribe Our Newsletter!</p>
           <form action="">
             <div>
@@ -39,7 +39,7 @@ export default function Home() {
             <button type='submit'>Subscribe</button>
             </div>
           </form>
-        </div>
+        </div> */}
         
         <Footer/>
     </div>
