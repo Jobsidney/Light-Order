@@ -1,9 +1,9 @@
-import React from 'react'
+import SmallNavBar from "./SmallNavBar"
 
 function index() {
   return (
     <div>
-      
+      <SmallNavBar/>
     </div>
   )
 }

@@ -678,6 +678,99 @@ svg:hover, i:hover{
 
 }
 
+/* !!!!!!!!...............DASHBORD....... !!!!!!!!*/
+
+.navBar2{
+  left: 0;
+  color: black;
+  /* justify-content: flex-start; */
+  
+}
+
+.navBar2>.menu-bars{
+  color:black;
+  position:fixed;
+}
+.menu-bars{
+  margin-left: 2rem;
+  font-size: 2rem;
+  background-color: none;
+  color: black;
+}
+.nav-menu{
+  background-color:#ed5625;
+ width: 420px;
+ /* position: fixed; */
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ height: 100vh;
+ position: fixed;
+ left:-100%;
+ transition: 850ms;
+}
+.nav-menu.active{
+  left:0;
+  background-color:#e8501d;
+  transition: 350ms;
+
+}
+.activate{
+  display:flex;
+}
+
+.nav-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+  margin: 10px;
+  font-size: 20px;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+  /* text-align: center; */
+  
+
+}
+
+.nav-text:hover{
+  background-color: #f3e874ff;
+  color: black;
+}
+.nav-menu-items{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 95%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .Card{
     border-radius: 0px;
