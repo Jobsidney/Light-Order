@@ -1,17 +1,27 @@
 import Head from 'next/head';
+import { useState } from 'react';
 import * as IoIcons from 'react-icons/io'
 
 function ProductDescrCart() {
+
+    const [qty,setQty] = useState(0)
+    function handleAdd(){
+        setQty(qty+1)
+    }
+    function handleMinus(){
+        qty==0 ? setQty(0) : setQty(qty-1)
+    }
+    const data=[1,2,3,4]
   return (
     <div>
     <section id="advertSection">
     <div className="ards">
-      <img src="" alt=""/>
-      <div className="small-images">
-        <img src="./../assets/images/image-product-1.jpg" alt=""/>
-        <img src="./assets/images/image-product-2-thumbnail.jpg" alt=""/>
-        <img src="./assets/images/image-product-3-thumbnail.jpg" alt=""/>
-        <img src="./assets/images/image-product-4-thumbnail.jpg" alt=""/>
+      <img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw0bb295cf/images/d_08/130125F_D_08X1.jpg?sw=406" alt=""/>
+      <div className="flex small-images">
+       {
+        data.map(item=>(<img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw0bb295cf/images/d_08/130125F_D_08X1.jpg?sw=406" alt=""/>))
+       }
+
       </div>
     </div>
     <div id="sellsDecriptiom">
@@ -34,9 +44,9 @@ function ProductDescrCart() {
       </div>
       <div className="items-shopping">
         <div className="addItems">
-             <IoIcons.IoIosRemove size={30}/>
-              <span id="cartAdd" className="icons2">0</span>
-              <IoIcons.IoIosAdd size={30}/>
+             <IoIcons.IoIosRemove className='add' size={30} onClick={handleMinus}/>
+              <span id="cartAdd" className="icons2">{qty}</span>
+              <IoIcons.IoIosAdd className='add' size={30} onClick={handleAdd}/>
           </div>
         <div className="add-To-Cart">
         <IoIcons.IoIosCart size={30}/>

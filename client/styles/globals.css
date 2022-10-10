@@ -860,6 +860,28 @@ input:focus{
 }
 
   /* ......................CART ITEM DESCR................ */
+  .add{
+    cursor: pointer;
+    margin: 0px 3px;
+  }
+  .avator>img{
+    width: 50px;
+    height: 50px;
+
+}
+.ards{
+    width: fit-content;
+}
+.ards>img{
+    width: 400px;
+    border-radius:10px;
+}
+.small-images>img{
+    width: 90px;
+    margin: 3rem 0.5rem;
+    border: 1px solid  orange;
+    border-radius: 8px;
+}
   #advertSection{
     display: flex;
     flex-direction: row;
