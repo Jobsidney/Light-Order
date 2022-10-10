@@ -4,7 +4,7 @@ import SmallNavBar from './SmallNavBar'
 import * as IoIcons from 'react-icons/io'
 function SearchTop() {
   return (
-    <div className='flex flex row p-3 pt-6 justify-between bg'>
+    <div className='flex flex row p-3 pt-6 justify-between bg sticky top-1 '>
      <SmallNavBar/>
      <div className="searchBar">
         <form className='flex' action="">
