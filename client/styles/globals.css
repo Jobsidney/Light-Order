@@ -750,7 +750,7 @@ svg:hover, i:hover{
   width: 95%;
 }
 .searchBar>form>input{
-  width: 40rem;
+  /* width: 70rem; */
   height: 3rem;
   border:1px solid grey;
   border-radius: 30px;
@@ -758,8 +758,12 @@ svg:hover, i:hover{
   color: rgb(248, 118, 34);
   text-align: center;
 }
+.searchBar>form>input:focus{
+  background-color: white;
+}
 input:focus{
   outline: none;
+
 }
 .userInfo>img{
   background-color:white;
@@ -995,7 +999,7 @@ input:focus{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   background-size:contain;
-  z-index: 1;
+  z-index: 2;
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
@@ -1034,7 +1038,7 @@ label>.fa{
   font-size: 25px;
 
 }
-input{
+#log>input{
   width: 100%;
   border-radius: 6px;
   padding: 1rem;
@@ -1087,7 +1091,7 @@ h3{
   font-size: x-large;
 
 }
-#sign{
+span>#sign{
   color:#1c689b;
   font-size: rem;
 }

@@ -8,8 +8,8 @@ function SearchTop() {
      <SmallNavBar/>
      <div className="searchBar">
         <form className='flex' action="">
-            <input placeholder='Search here..' type="text" />
-            <IoIcons.IoIosSearch size={40}/>
+            <input placeholder={'Search here..'} type="text" />
+            {/* <IoIcons.IoIosSearch size={40}/> */}
         </form>
      </div>
      <div className='flex'>
