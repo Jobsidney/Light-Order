@@ -1,7 +1,6 @@
 
 import React from 'react'
-import Login from './Login'
-import login from './login.css'
+
 import SignUp from './SignUp'
 function Form({data}) {
   
